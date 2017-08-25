@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F386325-1CFC-4453-824E-75F5064B994E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>LastSunday</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".gitmodules" />
+    <Content Include="LastSundayKata.Tests\bin\Debug\LastSundayKata.dll" />
+    <Content Include="LastSundayKata.Tests\bin\Debug\LastSundayKata.pdb" />
+    <Content Include="LastSundayKata.Tests\bin\Debug\LastSundayKata.Tests.dll" />
+    <Content Include="LastSundayKata.Tests\bin\Debug\LastSundayKata.Tests.pdb" />
+    <Content Include="LastSundayKata.Tests\bin\Debug\nunit.framework.dll" />
+    <Content Include="LastSundayKata.Tests\bin\Debug\nunit.framework.xml" />
+    <Content Include="LastSundayKata.Tests\LastSundayKata.Tests.csproj" />
+    <Content Include="LastSundayKata.Tests\obj\Debug\LastSundayKata.Tests.csproj.FileListAbsolute.txt" />
+    <Content Include="LastSundayKata.Tests\obj\Debug\LastSundayKata.Tests.dll" />
+    <Content Include="LastSundayKata.Tests\obj\Debug\LastSundayKata.Tests.pdb" />
+    <Content Include="LastSundayKata\bin\Debug\LastSundayKata.dll" />
+    <Content Include="LastSundayKata\bin\Debug\LastSundayKata.pdb" />
+    <Content Include="LastSundayKata\LastSundayKata.csproj" />
+    <Content Include="LastSundayKata\obj\Debug\LastSundayKata.csproj.FileListAbsolute.txt" />
+    <Content Include="LastSundayKata\obj\Debug\LastSundayKata.dll" />
+    <Content Include="LastSundayKata\obj\Debug\LastSundayKata.pdb" />
+    <Content Include="LastSundayKata\packages\NUnit.2.6.4\lib\nunit.framework.dll" />
+    <Content Include="LastSundayKata\packages\NUnit.2.6.4\lib\nunit.framework.xml" />
+    <Content Include="LastSundayKata\packages\NUnit.2.6.4\license.txt" />
+    <Content Include="rake-tasks\.gitignore" />
+    <Content Include="rake-tasks\7za\7za.exe" />
+    <Content Include="rake-tasks\coverage-csv.js" />
+    <Content Include="rake-tasks\CSPackager\PackagerCmd.exe" />
+    <Content Include="rake-tasks\database\BackupDB.sql" />
+    <Content Include="rake-tasks\database\RestoreDB.sql" />
+    <Content Include="rake-tasks\NuGet.exe" />
+    <Content Include="rake-tasks\vswhere.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LastSundayKata.Tests\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="LastSundayKata.Tests\obj\Debug\LastSundayKata.Tests.csprojResolveAssemblyReference.cache" />
+    <None Include="LastSundayKata.Tests\packages.config" />
+    <None Include="LastSundayKata\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="LastSundayKata\obj\Debug\LastSundayKata.csprojResolveAssemblyReference.cache" />
+    <None Include="LastSundayKata\packages\NUnit.2.6.4\NUnit.2.6.4.nupkg" />
+    <None Include="rake-tasks\.git" />
+    <None Include="rake-tasks\.jshintrc" />
+    <None Include="rake-tasks\CSPackager\PackagerCmd.exe.config" />
+    <None Include="rake-tasks\Gemfile" />
+    <None Include="rake-tasks\init.rb" />
+    <None Include="rake-tasks\installDependencies" />
+    <None Include="rake-tasks\installDependencies.cmd" />
+    <None Include="rake-tasks\package.json" />
+    <None Include="rake-tasks\rake-autover.rb" />
+    <None Include="rake-tasks\rake-cspkg.rb" />
+    <None Include="rake-tasks\rake-csvfile.rb" />
+    <None Include="rake-tasks\rake-dotcover.rb" />
+    <None Include="rake-tasks\rake-fetchxml.rb" />
+    <None Include="rake-tasks\rake-filesystem.rb" />
+    <None Include="rake-tasks\rake-git.rb" />
+    <None Include="rake-tasks\rake-innosetup.rb" />
+    <None Include="rake-tasks\rake-jslint.rb" />
+    <None Include="rake-tasks\rake-karma.rb" />
+    <None Include="rake-tasks\rake-msbuild.rb" />
+    <None Include="rake-tasks\rake-nodejs.rb" />
+    <None Include="rake-tasks\rake-nuget.rb" />
+    <None Include="rake-tasks\rake-nunit.rb" />
+    <None Include="rake-tasks\rake-packagemanifest.rb" />
+    <None Include="rake-tasks\rake-plato.rb" />
+    <None Include="rake-tasks\rake-powershell.rb" />
+    <None Include="rake-tasks\rake-settings.rb" />
+    <None Include="rake-tasks\rake-signtool.rb" />
+    <None Include="rake-tasks\rake-sonar.rb" />
+    <None Include="rake-tasks\rake-standardtasks.rb" />
+    <None Include="rake-tasks\rake-support.rb" />
+    <None Include="rake-tasks\rake-tempfolder.rb" />
+    <None Include="rake-tasks\rake-zip.rb" />
+    <None Include="rake-tasks\runcommandwithfail.rb" />
+    <None Include="rakefile.rb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LastSundayKata.Tests\LastSundayKataTests.cs" />
+    <Compile Include="LastSundayKata.Tests\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="LastSundayKata.Tests\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="LastSundayKata.Tests\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="LastSundayKata.Tests\Properties\AssemblyInfo.cs" />
+    <Compile Include="LastSundayKata\LastSundayKata.cs" />
+    <Compile Include="LastSundayKata\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="LastSundayKata\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="LastSundayKata\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="LastSundayKata\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\" />
+    <Folder Include="LastSundayKata.Tests\bin\Release\" />
+    <Folder Include="LastSundayKata.Tests\obj\Debug\TempPE\" />
+    <Folder Include="LastSundayKata\bin\Release\" />
+    <Folder Include="LastSundayKata\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
